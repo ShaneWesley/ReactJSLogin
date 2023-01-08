@@ -1,7 +1,8 @@
 :root {
-    --primary-colour: #323233;
+    --primary-colour: #dddddd;
+    --secondary-colour: #fda591;
+    
     --primary-text-colour: #ffffff;
 
-    --secondary-colour: #1e1e1e;
-    --secondary-text-colour: #6e6e6e;
+    --login-background-image: url("../public/pexels-stephan-seeber-1261728.jpg"); 
 }
