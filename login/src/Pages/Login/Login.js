@@ -6,6 +6,7 @@ function Login() {
             <div className="login">
                 <div className="button-container">
                     <button className="button" onClick={OnLogin}>Login</button>
+                    <button className="button" onClick={OnSignUp}>Sign Up</button>
                 </div>
             </div>
         </div>
