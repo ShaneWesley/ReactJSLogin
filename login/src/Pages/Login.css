@@ -27,6 +27,7 @@
 
 .login-container {
     display: flex;
+    box-sizing:border-box;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -35,15 +36,44 @@
     height: 100%;
 }
 
-.button-container {
+.inputs-container {
     display: flex;
     flex-direction: column;
-    width: auto;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
     height: auto;
-    padding-top: 350px;
 }
 
-.button {
+.text-box {
+    border: none;
+    text-align: center;
+    width: 70%;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.checkbox {
+    font-size: var(--font-size);
+}
+
+.button-container {
+    display: flex;
+    box-sizing:border-box;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20%;
+    width: 100%;
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+button {
     color: var(--primary-text-colour);
     background-color: var(--secondary-colour);
     border-style: none;
@@ -52,7 +82,7 @@
     height: 40px;
 }
 
-.button:hover {
+button:hover {
     background-color: #e49481;
 }
 
@@ -61,7 +91,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: auto;
+    width: 100%;
     height: auto;
 }
 
@@ -69,5 +99,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 20px;
+    font-size: var(--font-size);
+    padding: 10px;
 }

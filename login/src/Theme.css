@@ -4,5 +4,7 @@
     
     --primary-text-colour: #ffffff;
 
+    --font-size: 0.8rem;
+
     --login-background-image: url("../public/pexels-stephan-seeber-1261728.jpg"); 
 }
