@@ -2,9 +2,9 @@ import './Login.css';
 
 function Login() {
     return (
-        <div className="container">
-            <div className="login-background">
-                <div className="login-container" >
+        <div className="background">
+            <div className="rounded-square">
+                <div className="container" >
                     <div className="logo" />
                     <form className="inputs-container">
                         <input className="text-box" type="text" name="name" placeholder="Email" />

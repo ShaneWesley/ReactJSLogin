@@ -1,41 +1,5 @@
 @import "../Theme.css";
 
-.container {
-    background-color: var(--primary-text-colour);
-    background-image: var(--login-background-image);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-}
-
-.login-background {
-    background-color: var(--primary-colour);
-    display: flex;
-    box-sizing:border-box;
-    justify-content: center;
-    align-items: center;
-    width: 30%;
-    height: 90%;
-    border-radius: 25px;
-    padding: 20px;
-}
-
-.login-container {
-    display: flex;
-    box-sizing:border-box;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius: inherit;
-    width: 100%;
-    height: 100%;
-}
-
 .inputs-container {
     display: flex;
     flex-direction: column;
@@ -43,21 +7,6 @@
     align-items: center;
     width: 100%;
     height: auto;
-}
-
-.button-container {
-    display: flex;
-    box-sizing:border-box;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    column-gap: 20%;
-    width: 100%;
-    height: auto;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 50px;
-    padding-right: 50px;
 }
 
 .link-container {
@@ -87,25 +36,4 @@
 
 .checkbox {
     font-size: var(--font-size);
-}
-
-button {
-    color: var(--primary-text-colour);
-    background-color: var(--secondary-colour);
-    border-style: none;
-    border-radius: 50px;
-    width: 150px;
-    height: 40px;
-}
-
-button:hover {
-    background-color: #e49481;
-}
-
-.link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: var(--font-size);
-    padding: 10px;
 }
