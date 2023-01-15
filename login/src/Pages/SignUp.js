@@ -1,19 +1,67 @@
 import './SignUp.css';
 
+import React, { useState, useEffect } from 'react';
+import { useNavigate } from "react-router-dom";
+
+const placeholders = ['First Name',
+    'Last Name',
+    'Email',
+    'Password',
+    'Contact Number'];
+
 function SignUp() {
+    const [userData, setUserData] = useState({
+        firstName: '',
+        lastName: '',
+        email: '',
+        password: '',
+        contactNumber: ''
+    });
+    var keys = Object.keys(userData);
+
+    const navigate = useNavigate();
+
+    useEffect(() => {
+        console.log(userData);
+    });
+
+    function resetUserData() {
+        for (var element in userData) {
+            userData[element] = '';
+        }
+
+        navigate('/login');
+    }
+
+    function handleChange(event) {
+        const target = event.target;
+        const newUser = {
+            ...userData
+        }
+
+        for (var element in userData) {
+            newUser[element] = (target.name === element) ? target.value : userData[element];
+        }
+
+        setUserData(newUser);
+    }
+
+    function onSignUp() {
+        resetUserData();
+    }
+
     return (
         <div className="background">
             <div className="rounded-square sign-in">
                 <div className="container">
                     <form>
                         <h2>Sign Up</h2>
-                        <input className="text-box" type="text" name="name" placeholder="First Name" />
-                        <input className="text-box" type="text" name="name" placeholder="Last Name" />
-                        <input className="text-box" type="text" name="name" placeholder="Email" />
-                        <input className="text-box" type="text" name="name" placeholder="Password" />
-                        <input className="text-box" type="text" name="name" placeholder="Contact Number" />
+                        {
+                            placeholders.map((placeholder, i) => <input key={`input-key${i}`} className='text-box' type='text'
+                                value={userData[i]} onChange={handleChange} name={keys[i]} placeholder={placeholder} />)
+                        }
                         <div className="button-container">
-                            <button onClick={OnSignUp}>Sign Up</button>
+                            <button onClick={onSignUp}>Sign Up</button>
                         </div>
                     </form>
                     <div className="link-container sign-in">
@@ -23,10 +71,6 @@ function SignUp() {
             </div>
         </div>
     );
-}
-
-function OnSignUp() {
-    alert("Signed Up.");
 }
 
 export default SignUp;
