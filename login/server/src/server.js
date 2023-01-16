@@ -2,14 +2,13 @@ const path = require("path");
 const express = require('express');
 
 const port = 5000;
-
 const app = express();
 
 app.use(express.json());
 
 //  Routes
-const users = require('./Routes/users');
-app.use('/users', users);
+const routes = require('./routes/routes');
+app.use('/', routes);
 
 //  Server Side Rendering (SSR)
 app.use(express.static(path.join(__dirname, "../../", "build")));

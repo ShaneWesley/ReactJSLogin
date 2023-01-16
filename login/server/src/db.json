@@ -1,0 +1,11 @@
+{
+    "users": [
+        {
+            "firstName": "Test",
+            "lastName": "User",
+            "email": "test.user@provider.com",
+            "password": "password123",
+            "contactNumber": "07712345678"
+        }
+    ]
+}
