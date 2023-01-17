@@ -1,4 +1,4 @@
-import './ForgotPassword.css';
+import './forgot-password.css';
 
 function ForgotPassword() {
     return (

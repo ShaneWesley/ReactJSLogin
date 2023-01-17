@@ -1,4 +1,4 @@
-import './SignUp.css';
+import './sign-up.css';
 
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from "react-router-dom";

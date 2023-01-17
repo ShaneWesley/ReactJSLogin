@@ -3,9 +3,9 @@ import './App.css';
 import { Navigate, Route, Routes } from 'react-router-dom';
 
 //  Pages
-import Login from "./Pages/Login.js"
-import SignUp from "./Pages/SignUp.js"
-import ForgotPassword from "./Pages/ForgotPassword.js"
+import Login from "./pages/login.js"
+import SignUp from "./pages/sign-up"
+import ForgotPassword from "./pages/forgot-password"
 
 function App() {
   return (
