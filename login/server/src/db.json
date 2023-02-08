@@ -6,6 +6,13 @@
             "email": "test.user@provider.com",
             "password": "password123",
             "contactNumber": "07712345678"
+        },
+        {
+            "firstName": "Joe",
+            "lastName": "Bloggs",
+            "email": "joe.bloggs@provider.com",
+            "password": "password123",
+            "contactNumber": "07712345678"
         }
     ]
 }
